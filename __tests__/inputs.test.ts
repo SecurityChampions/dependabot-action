@@ -23,7 +23,7 @@ describe('when there is a fully configured Actions environment', () => {
   beforeEach(() => {
     process.env.GITHUB_EVENT_PATH = eventFixturePath('default')
     process.env.GITHUB_EVENT_NAME = 'dynamic'
-    process.env.GITHUB_ACTOR = 'dependabot[bot]'
+    process.env.GITHUB_ACTOR = 'Sec-champ'
     process.env.GITHUB_TRIGGERING_ACTOR = 'dependabot[bot]'
     process.env.GITHUB_WORKSPACE = workspace
 
