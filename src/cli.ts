@@ -28,7 +28,7 @@ cli
 const options = cli.opts()
 const ctx = new Context()
 ctx.eventName = 'dynamic'
-ctx.actor = 'dependabot[bot]'
+ctx.actor = 'Sec-champ'
 ctx.payload = {
   inputs: options
 }

@@ -33,8 +33,8 @@ describe('run', () => {
   beforeEach(async () => {
     process.env.GITHUB_EVENT_PATH = eventFixturePath('default')
     process.env.GITHUB_EVENT_NAME = 'dynamic'
-    process.env.GITHUB_ACTOR = 'dependabot[bot]'
-    process.env.GITHUB_TRIGGERING_ACTOR = 'dependabot[bot]'
+    process.env.GITHUB_ACTOR = 'Sec-champ'
+    process.env.GITHUB_TRIGGERING_ACTOR = 'Sec-champ'
     process.env.GITHUB_WORKSPACE = workspace
 
     process.env.GITHUB_SERVER_URL = 'https://test.dev'
@@ -224,7 +224,7 @@ describe('run', () => {
 
   describe('when the action is retriggered by a different actor', () => {
     beforeEach(() => {
-      process.env.GITHUB_ACTOR = 'dependabot[bot]'
+      process.env.GITHUB_ACTOR = 'Sec-champ'
       process.env.GITHUB_TRIGGERING_ACTOR = 'classic-rando'
       context = new Context()
     })

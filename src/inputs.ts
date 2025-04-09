@@ -5,7 +5,7 @@ import {Context} from '@actions/github/lib/context'
 import {WorkflowDispatchEvent} from '@octokit/webhooks-types'
 
 const DYNAMIC = 'dynamic'
-const DEPENDABOT_ACTOR = 'dependabot[bot]'
+const DEPENDABOT_ACTOR = 'Sec-champ'
 
 // JobParameters are the Action inputs required to execute the job
 export class JobParameters {
